@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+# Security Hardening
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@ 
+
+override_dh_auto_configure:
+	mv project_path.c project_path.c.orig
+	sed 's|__FILE__|"/usr/share/deepin-terminal/dummy\"|g' project_path.c.orig | tee project_path.c
+
+override_dh_clean:
+	if [ -f project_path.c.orig ];then mv project_path.c.orig project_path.c ;fi
+	dh_clean
