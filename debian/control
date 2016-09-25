@@ -14,6 +14,11 @@ Build-Depends:
  libatk1.0-dev,
  libcairo2-dev,
  libfontconfig1-dev,
+ libfreetype6-dev,
+ libglib2.0-dev,
+ libgnutls28-dev,
+ libpango1.0-dev,
+ libx11-dev,
  libgdk-pixbuf2.0-dev,
  valac,
 Standards-Version: 3.9.8
@@ -26,6 +31,7 @@ Provides:
 Depends:
  lrzsz,
  zssh,
+ deepin-menu,
  ${misc:Depends},
  ${shlibs:Depends},
 Description: Deepin terminal, it sharpens your focus in the world of command line!
