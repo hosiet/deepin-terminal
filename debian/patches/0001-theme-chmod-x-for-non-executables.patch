@@ -123,13 +123,13 @@ new mode 100644
 diff --git a/theme/freya b/theme/freya
 old mode 100755
 new mode 100644
-diff --git a/theme/gruvbox dark b/theme/gruvbox dark
+diff --git "a/theme/gruvbox dark" "b/theme/gruvbox dark"
 old mode 100755
 new mode 100644
-diff --git a/theme/hemisu dark b/theme/hemisu dark
+diff --git "a/theme/hemisu dark" "b/theme/hemisu dark"
 old mode 100755
 new mode 100644
-diff --git a/theme/hemisu light b/theme/hemisu light
+diff --git "a/theme/hemisu light" "b/theme/hemisu light"
 old mode 100755
 new mode 100644
 diff --git a/theme/hybrid b/theme/hybrid
@@ -147,19 +147,19 @@ new mode 100644
 diff --git a/theme/miu b/theme/miu
 old mode 100755
 new mode 100644
-diff --git a/theme/monokai dark b/theme/monokai dark
+diff --git "a/theme/monokai dark" "b/theme/monokai dark"
 old mode 100755
 new mode 100644
 diff --git a/theme/nep b/theme/nep
 old mode 100755
 new mode 100644
-diff --git a/theme/ocean dark b/theme/ocean dark
+diff --git "a/theme/ocean dark" "b/theme/ocean dark"
 old mode 100755
 new mode 100644
-diff --git a/theme/one dark b/theme/one dark
+diff --git "a/theme/one dark" "b/theme/one dark"
 old mode 100755
 new mode 100644
-diff --git a/theme/one light b/theme/one light
+diff --git "a/theme/one light" "b/theme/one light"
 old mode 100755
 new mode 100644
 diff --git a/theme/pali b/theme/pali
@@ -177,10 +177,10 @@ new mode 100644
 diff --git a/theme/smyck b/theme/smyck
 old mode 100755
 new mode 100644
-diff --git a/theme/solarized dark b/theme/solarized dark
+diff --git "a/theme/solarized dark" "b/theme/solarized dark"
 old mode 100755
 new mode 100644
-diff --git a/theme/solarized light b/theme/solarized light
+diff --git "a/theme/solarized light" "b/theme/solarized light"
 old mode 100755
 new mode 100644
 diff --git a/theme/tango b/theme/tango
@@ -192,16 +192,16 @@ new mode 100644
 diff --git a/theme/tomorrow b/theme/tomorrow
 old mode 100755
 new mode 100644
-diff --git a/theme/tomorrow night b/theme/tomorrow night
+diff --git "a/theme/tomorrow night" "b/theme/tomorrow night"
 old mode 100755
 new mode 100644
-diff --git a/theme/tomorrow night blue b/theme/tomorrow night blue
+diff --git "a/theme/tomorrow night blue" "b/theme/tomorrow night blue"
 old mode 100755
 new mode 100644
-diff --git a/theme/tomorrow night bright b/theme/tomorrow night bright
+diff --git "a/theme/tomorrow night bright" "b/theme/tomorrow night bright"
 old mode 100755
 new mode 100644
-diff --git a/theme/tomorrow night eighties b/theme/tomorrow night eighties
+diff --git "a/theme/tomorrow night eighties" "b/theme/tomorrow night eighties"
 old mode 100755
 new mode 100644
 diff --git a/theme/ura b/theme/ura
