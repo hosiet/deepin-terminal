@@ -6,7 +6,6 @@ Uploaders:
  Boyuan Yang <073plan@gmail.com>,
 Build-Depends:
  debhelper (>= 10),
- dh-exec,
  libfontconfig1-dev,
  libfreetype6-dev,
  libgee-0.8-dev,
@@ -31,8 +30,6 @@ Depends:
  zssh,
  ${misc:Depends},
  ${shlibs:Depends},
-Recommends:
- bash,
 Description: Deepin terminal, it sharpens your focus in the world of command line!
  Deepin Terminal is an advanced terminal emulator with workspace, multiple windows, remote management, quake mode and other features.
  It sharpens your focus in the world of command line!
