@@ -13,6 +13,9 @@ override_dh_auto_configure:
 	mv project_path.c project_path.c.orig
 	sed 's|__FILE__|"/usr/share/deepin-terminal/project_path.c"|g' project_path.c.orig | tee project_path.c
 
+override_dh_auto_install:
+	dh_auto_install -- PREFIX=/usr
+
 override_dh_clean:
 	if [ -f project_path.c.orig ];then mv project_path.c.orig project_path.c ;fi
 	dh_clean

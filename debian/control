@@ -11,15 +11,9 @@ Build-Depends:
  libsecret-1-dev,
  libvte-2.91-dev,
  libwnck-3-dev,
- libatk1.0-dev,
- libcairo2-dev,
  libfontconfig1-dev,
  libfreetype6-dev,
- libglib2.0-dev,
  libgnutls28-dev,
- libpango1.0-dev,
- libx11-dev,
- libgdk-pixbuf2.0-dev,
  valac,
 Standards-Version: 3.9.8
 Homepage: http://www.deepin.org
