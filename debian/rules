@@ -5,6 +5,7 @@
 
 # Security Hardening
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export VALAFLAGS:=$(foreach w,$(CPPFLAGS) $(CFLAGS) $(LDFLAGS),-X $(w))
 
 %:
 	dh $@ 
