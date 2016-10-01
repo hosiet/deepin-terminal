@@ -2,18 +2,20 @@ Source: deepin-terminal
 Section: utils
 Priority: optional
 Maintainer: Deepin Packages Builder <packages@deepin.com>
-Uploaders: Boyuan Yang <073plan@gmail.com>
+Uploaders:
+ Boyuan Yang <073plan@gmail.com>,
 Build-Depends:
  debhelper (>= 10),
+ dh-exec,
+ libfontconfig1-dev,
+ libfreetype6-dev,
  libgee-0.8-dev,
+ libgnutls28-dev,
  libgtk-3-dev,
  libjson-glib-dev,
  libsecret-1-dev,
  libvte-2.91-dev,
  libwnck-3-dev,
- libfontconfig1-dev,
- libfreetype6-dev,
- libgnutls28-dev,
  valac,
 Standards-Version: 3.9.8
 Homepage: http://www.deepin.org
@@ -23,9 +25,9 @@ Architecture: any
 Provides:
  x-terminal-emulator,
 Depends:
+ deepin-menu,
  lrzsz,
  zssh,
- deepin-menu,
  ${misc:Depends},
  ${shlibs:Depends},
 Description: Deepin terminal, it sharpens your focus in the world of command line!

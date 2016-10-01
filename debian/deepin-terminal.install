@@ -1,0 +1,2 @@
+#!/usr/bin/dh-exec
+main => /usr/bin/deepin-terminal
