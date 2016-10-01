@@ -1,5 +1,5 @@
 version=4
 
-opts="dversionmangle=s/\+ds\d*$//,repacksuffix=+ds,filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%deepin-terminal-$1.tar.gz%" \
+opts="dversionmangle=s/\+ds2\d*$//,repacksuffix=+ds2,filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%deepin-terminal-$1.tar.gz%" \
    https://github.com/manateelazycat/deepin-terminal/tags \
    (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate
