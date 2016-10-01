@@ -26,10 +26,13 @@ Provides:
  x-terminal-emulator,
 Depends:
  deepin-menu,
+ expect,
  lrzsz,
  zssh,
  ${misc:Depends},
  ${shlibs:Depends},
+Recommends:
+ bash,
 Description: Deepin terminal, it sharpens your focus in the world of command line!
  Deepin Terminal is an advanced terminal emulator with workspace, multiple windows, remote management, quake mode and other features.
  It sharpens your focus in the world of command line!
