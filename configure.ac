@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([Deepin Terminal], [2.16], [wangyong@deepin.com], [deepin-terminal], [https://github.com/manateelazycat/deepin-terminal])
+AC_INIT([Deepin Terminal], [2.0.16], [wangyong@deepin.com], [deepin-terminal], [https://github.com/manateelazycat/deepin-terminal])
 AC_CONFIG_SRCDIR([project_path.c])
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_AUX_DIR([build-aux])
