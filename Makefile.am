@@ -97,6 +97,9 @@ localedir = $(datadir)/locale
 zhcntranslationdir = $(localedir)/zh_CN/LC_MESSAGES
 #zhcntranslation_DATA = po/zh_CN/LC_MESSAGES/deepin-terminal.mo
 
+EXTRA_DIST = vapi view_color.sh ssh_login.sh style.css README.md \
+             hicolor image manual po theme deepin-terminal.desktop
+
 install-data-local:
 	msgfmt --output po/zh_CN/LC_MESSAGES/deepin-terminal.mo po/zh_CN/LC_MESSAGES/deepin-terminal.po
 	@$(NORMAL_INSTALL)
