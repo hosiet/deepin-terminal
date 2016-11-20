@@ -1,0 +1,92 @@
+deepin-terminal (2.1.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Boyuan Yang <073plan@gmail.com>  Sun, 20 Nov 2016 16:59:53 +0800
+
+deepin-terminal (2.0.16+ds2-1) unstable; urgency=medium
+
+  * Switch the buildsystem from raw Makefile to Autotools.
+    - Really enables hardening flags.
+  * Fix incorrect file permissions.
+
+ -- Boyuan Yang <073plan@gmail.com>  Sun, 02 Oct 2016 12:21:38 +0800
+
+deepin-terminal (2.0.16+ds-1) unstable; urgency=medium
+
+  * Repack as debian-source package.
+    - Remove bundled vapi files to fit vala >= 0.32.
+    - Fix hardening flags.
+    - Add a watch file.
+  * Remove unused dependencies.
+
+ -- Boyuan Yang <073plan@gmail.com>  Sat, 01 Oct 2016 15:58:19 +0800
+
+deepin-terminal (2.0.16-1.1) unstable; urgency=medium
+
+  * Repackage against Debian unstable.
+    - Enable full security hardening.
+    - Fix copyright information.
+    - Use debhelper compat version 10.
+
+ -- Boyuan Yang <073plan@gmail.com>  Sun, 25 Sep 2016 15:33:28 +0800
+
+deepin-terminal (2.0.16-1) unstable; urgency=low
+
+  * Autobuild Tag 2.0.16 
+
+ -- TagBuilder <tagbuilder@deepin.com>  Mon, 19 Sep 2016 15:17:42 +0000
+
+deepin-terminal (2.0.15-1) unstable; urgency=low
+
+  * Autobuild Tag 2.0.15 
+
+ -- TagBuilder <tagbuilder@deepin.com>  Mon, 12 Sep 2016 12:06:00 +0000
+
+deepin-terminal (2.0.14-1) unstable; urgency=low
+
+  * Autobuild Tag 2.0.14 
+
+ -- TagBuilder <tagbuilder@deepin.com>  Mon, 12 Sep 2016 09:28:55 +0000
+
+deepin-terminal (2.0.13-1) unstable; urgency=low
+
+  * Autobuild Tag 2.0.13 
+
+ -- TagBuilder <tagbuilder@deepin.com>  Wed, 07 Sep 2016 09:46:09 +0000
+
+deepin-terminal (2.0.12-1) unstable; urgency=low
+
+  * Autobuild Tag 2.0.12 
+
+ -- TagBuilder <tagbuilder@deepin.com>  Mon, 05 Sep 2016 15:16:37 +0000
+
+deepin-terminal (2.0.11-1) unstable; urgency=low
+
+  * Autobuild Tag 2.0.11 
+
+ -- TagBuilder <tagbuilder@deepin.com>  Mon, 05 Sep 2016 13:58:06 +0000
+
+deepin-terminal (2.0.6-1) stable; urgency=low
+
+  * Autobuild Tag 2.0.6 
+
+ -- TagBuilder <tagbuilder@deepin.com>  Thu, 01 Sep 2016 13:45:27 +0000
+
+deepin-terminal (2.0.5-2) stable; urgency=low
+
+  * Rebuild Version 2.0.5 
+
+ -- TagBuilder <tagbuilder@deepin.com>  Thu, 01 Sep 2016 13:39:40 +0000
+
+deepin-terminal (2.0.5-1) stable; urgency=low
+
+  * Autobuild Tag 2.0.5 
+
+ -- TagBuilder <tagbuilder@deepin.com>  Thu, 01 Sep 2016 13:34:11 +0000
+
+deepin-terminal (2.0.0) unstable; urgency=medium
+
+  * 
+
+ -- Deepin Packages Builder <packages@deepin.com>  Tue, 02 Aug 2016 11:25:20 +0800
