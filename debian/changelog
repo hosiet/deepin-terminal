@@ -1,3 +1,9 @@
+deepin-terminal (2.1.5-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Boyuan Yang <073plan@gmail.com>  Fri, 23 Dec 2016 16:56:41 +0800
+
 deepin-terminal (2.1.0-1) unstable; urgency=medium
 
   * New upstream release.
