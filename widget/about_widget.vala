@@ -33,9 +33,9 @@ namespace Widgets {
         public int height = 320;
         public int name_height = 13;
         public int version_height = 12;
-        public int version_size = 11;
+        public int version_size = 9;
         public int icon_y = 13;
-        public int name_y = 113;
+        public int name_y = 106;
         public int version_y = 146;
         public int logo_y = 176;
         public int homepage_y = 200;
@@ -59,7 +59,7 @@ namespace Widgets {
             var homepage_area = new Widgets.LinkButton("www.deepin.org", "https://www.deepin.org", "homepage");
             content_box.pack_start(homepage_area, false, false, 0);
 
-            var acknowledgments_area = new Widgets.LinkButton(_("Acknowledgments"), "https://www.deepin.org/acknowledgments.html#deepin-terminal", "acknowledgments");
+            var acknowledgments_area = new Widgets.LinkButton(_("Acknowledgments"), "https://www.deepin.org/acknowledgments/deepin-terminal", "acknowledgments");
             acknowledgments_area.margin_top = acknowledgments_y;
             content_box.pack_start(acknowledgments_area, false, false, 0);
             
