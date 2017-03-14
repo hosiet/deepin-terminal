@@ -87,6 +87,7 @@ namespace Widgets {
 			command_panel_hide_timer.animate.connect(command_panel_hide_animate);
 
             Term term = new_term(true, work_directory);
+            workspace_manager.set_first_term(term);
             
             add(term);
         }
@@ -482,7 +483,7 @@ namespace Widgets {
             }
         }
         
-        public void search() {
+        public void search(string search_text="") {
             remove_remote_panel();
             remove_theme_panel();
             remove_encoding_panel();
@@ -491,7 +492,7 @@ namespace Widgets {
             terminal_before_popup = get_focus_term(this);
             if (search_panel == null && terminal_before_popup != null) {
                 
-                search_panel = new SearchPanel(((Widgets.ConfigWindow) get_toplevel()), terminal_before_popup);
+                search_panel = new SearchPanel(((Widgets.ConfigWindow) get_toplevel()), terminal_before_popup, search_text);
                 search_panel.quit_search.connect((w) => {
                         remove_search_panel();
                     });

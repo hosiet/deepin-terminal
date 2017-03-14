@@ -2,20 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-08 18:00+0800\n"
+"POT-Creation-Date: 2017-02-04 13:02+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Last-Translator: Jonas Motiejūnas <exjonas@gmail.com>, 2017\n"
+"Language-Team: Lithuanian (https://www.transifex.com/linuxdeepin/teams/3976/lt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: lt\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: ../widget/terminal.vala:936
 msgid ""
@@ -25,49 +26,49 @@ msgstr ""
 
 #: ../widget/appbar.vala:140
 msgid "About"
-msgstr ""
+msgstr "Apie"
 
 #: ../widget/about_widget.vala:62
 msgid "Acknowledgments"
-msgstr ""
+msgstr "Padėkos"
 
 #: ../widget/remote_server_dialog.vala:346 ../widget/command_dialog.vala:198
 msgid "Add"
-msgstr ""
+msgstr "Pridėti"
 
 #: ../widget/command_dialog.vala:127
 msgid "Add Command"
-msgstr ""
+msgstr "Pridėti komandą"
 
 #: ../widget/remote_server_dialog.vala:149
 msgid "Add Server"
-msgstr ""
+msgstr "Pridėti serverį"
 
 #: ../widget/command_panel.vala:303
 msgid "Add command"
-msgstr ""
+msgstr "Pridėti komandą"
 
 #: ../widget/remote_panel.vala:574
 msgid "Add server"
-msgstr ""
+msgstr "Pridėti serverį"
 
 #: ../widget/remote_server_dialog.vala:102
 msgid "Address"
-msgstr ""
+msgstr "Adresas"
 
 #: ../widget/remote_server_dialog.vala:185
 msgid "Address:"
-msgstr ""
+msgstr "Adresas:"
 
 #: ../widget/preference_slidebar.vala:75 ../widget/preference_slidebar.vala:82
-#: ../widget/preference.vala:322 ../widget/preference.vala:333
+#: ../widget/preference.vala:320 ../widget/preference.vala:331
 #: ../widget/config_window.vala:324
 msgid "Advanced"
-msgstr ""
+msgstr "Išplėstinės"
 
 #: ../widget/remote_server_dialog.vala:331
 msgid "Advanced options"
-msgstr ""
+msgstr "išplėstinės pasirinktys"
 
 #: ../widget/remote_server_dialog.vala:420 ../widget/command_dialog.vala:250
 msgid "Are you sure to delete"
@@ -85,7 +86,7 @@ msgstr ""
 msgid "Backspace key:"
 msgstr ""
 
-#: ../widget/preference_slidebar.vala:56 ../widget/preference.vala:238
+#: ../widget/preference_slidebar.vala:56 ../widget/preference.vala:236
 msgid "Basic"
 msgstr ""
 
@@ -95,47 +96,47 @@ msgstr ""
 #: ../widget/file_button.vala:69 ../widget/command_dialog.vala:193
 #: ../widget/command_dialog.vala:251
 msgid "Cancel"
-msgstr ""
+msgstr "Atsisakyti"
 
 #: ../widget/remote_server_dialog.vala:102
 msgid "Certificate"
-msgstr ""
+msgstr "Liudijimas"
 
 #: ../widget/remote_server_dialog.vala:255
 msgid "Certificate:"
-msgstr ""
+msgstr "Liudijimas:"
 
 #: ../widget/terminal.vala:253 ../widget/config_window.vala:302
 msgid "Close other windows"
-msgstr ""
+msgstr "Užverti kitus langus"
 
-#: ../widget/preference.vala:320
+#: ../widget/preference.vala:318
 msgid "Close other windows:"
-msgstr ""
+msgstr "Užverti kitus langus:"
 
 #: ../widget/terminal.vala:251 ../widget/config_window.vala:301
 msgid "Close window"
-msgstr ""
+msgstr "Užverti langą"
 
-#: ../widget/preference.vala:319
+#: ../widget/preference.vala:317
 msgid "Close window:"
-msgstr ""
+msgstr "Užverti langą:"
 
 #: ../widget/config_window.vala:291
 msgid "Close workspace"
-msgstr ""
+msgstr "Užverti darbo sritį"
 
-#: ../widget/preference.vala:310
+#: ../widget/preference.vala:308
 msgid "Close workspace:"
-msgstr ""
+msgstr "Užverti darbo sritį:"
 
 #: ../widget/remote_server_dialog.vala:102
 msgid "Command"
-msgstr ""
+msgstr "Komanda"
 
 #: ../widget/remote_server_dialog.vala:289 ../widget/command_dialog.vala:173
 msgid "Command:"
-msgstr ""
+msgstr "Komanda:"
 
 #: ../widget/command_dialog.vala:84
 msgid "Content"
@@ -144,172 +145,167 @@ msgstr ""
 #: ../widget/terminal.vala:223 ../widget/config_window.vala:265
 #: ../widget/entry_menu.vala:16
 msgid "Copy"
-msgstr ""
+msgstr "Kopijuoti"
 
 #: ../widget/terminal.vala:227
 msgid "Copy link"
-msgstr ""
+msgstr "Kopijuoti nuorodą"
 
-#: ../widget/preference.vala:292
+#: ../widget/preference.vala:290
 msgid "Copy:"
-msgstr ""
+msgstr "Kopijuoti:"
 
-#: ../widget/preference_slidebar.vala:85 ../widget/preference.vala:336
+#: ../widget/preference_slidebar.vala:85 ../widget/preference.vala:334
 msgid "Cursor"
-msgstr ""
+msgstr "Žymeklis"
 
-#: ../widget/preference.vala:358
+#: ../widget/preference.vala:356
 msgid "Cursor blink"
-msgstr ""
+msgstr "Žymeklio mirksėjimas"
 
-#: ../widget/preference.vala:192
+#: ../widget/preference.vala:191
 msgid "Cursor style:"
-msgstr ""
+msgstr "Žymeklio stilius"
 
 #: ../widget/terminal.vala:278 ../widget/config_window.vala:318
 #: ../widget/appbar.vala:133
 msgid "Custom commands"
-msgstr ""
+msgstr "Asmeninės komandos"
 
-#: ../widget/preference.vala:330
+#: ../widget/preference.vala:328
 msgid "Custom commands:"
-msgstr ""
+msgstr "Asmeninės komandos:"
 
 #: ../widget/entry_menu.vala:15
 msgid "Cut"
-msgstr ""
+msgstr "Iškirpti"
 
 #: ../main.vala:175 ../widget/about_widget.vala:82 ../widget/tabbar.vala:603
 msgid "Deepin Terminal"
-msgstr ""
+msgstr "Deepin terminalas"
 
 #: ../main.vala:176 ../widget/about_widget.vala:49
 msgid ""
-"Deepin Terminal is an advanced terminal emulator with workspace, multiple "
-"windows, remote management, quake mode and other features.\n"
+"Deepin Terminal is an advanced terminal emulator with workspace, multiple windows, remote management, quake mode and other features.\n"
 "\n"
 "It sharpens your focus in the world of command line!"
 msgstr ""
 
 #: ../widget/config_window.vala:271
 msgid "Default size"
-msgstr ""
+msgstr "Numatytasis dydis"
 
-#: ../widget/preference.vala:298
+#: ../widget/preference.vala:296
 msgid "Default size:"
-msgstr ""
+msgstr "Numatytasis dydis:"
 
 #: ../widget/remote_server_dialog.vala:422 ../widget/command_dialog.vala:252
 #: ../widget/entry_menu.vala:21
 msgid "Delete"
-msgstr ""
+msgstr "Ištrinti"
 
 #: ../widget/command_dialog.vala:239 ../widget/command_dialog.vala:249
 msgid "Delete command"
-msgstr ""
+msgstr "Ištrinti komandą"
 
 #: ../widget/remote_server_dialog.vala:102
 msgid "Delete key"
-msgstr ""
+msgstr "Ištrinti mygtuką"
 
 #: ../widget/remote_server_dialog.vala:328
 msgid "Delete key:"
-msgstr ""
+msgstr "Ištrinti mygtuką:"
 
 #: ../widget/remote_server_dialog.vala:409
 #: ../widget/remote_server_dialog.vala:419
 msgid "Delete server"
-msgstr ""
+msgstr "Ištrinti serverį"
 
 #: ../widget/config_window.vala:317
 msgid "Display shortcuts"
-msgstr ""
+msgstr "Rodyti sparčiuosius klavišus"
 
-#: ../widget/preference.vala:329
+#: ../widget/preference.vala:327
 msgid "Display shortcuts:"
-msgstr ""
+msgstr "Rodyti sparčiuosius klavišus:"
 
 #: ../main.vala:124
 msgid "Display version"
-msgstr ""
+msgstr "Rodyti versiją"
 
 #: ../widget/terminal.vala:283
 msgid "Download file"
-msgstr ""
+msgstr "Atsisiųsti failą"
 
 #: ../widget/command_dialog.vala:125
 msgid "Edit Command"
-msgstr ""
+msgstr "Redaguoti komandą"
 
 #: ../widget/remote_server_dialog.vala:147
 msgid "Edit Server"
-msgstr ""
+msgstr "Redaguoti serverį"
 
 #: ../widget/remote_server_dialog.vala:102 ../widget/terminal.vala:277
 msgid "Encoding"
-msgstr ""
+msgstr "Koduotė"
 
 #: ../widget/remote_server_dialog.vala:302
 msgid "Encoding:"
-msgstr ""
+msgstr "Koduotė:"
 
 #: ../widget/confirm_dialog.vala:132 ../widget/appbar.vala:141
 msgid "Exit"
-msgstr ""
+msgstr "Išeiti"
 
 #: ../widget/terminal.vala:263
 msgid "Exit fullscreen"
-msgstr ""
-
-#: ../widget/preference.vala:281
-msgid "Font size:"
-msgstr ""
+msgstr "Išeiti iš viso ekrano"
 
 #: ../widget/preference.vala:279
+msgid "Font size:"
+msgstr "Šrifto dydis:"
+
+#: ../widget/preference.vala:277
 msgid "Font:"
-msgstr ""
+msgstr "Šriftas:"
 
-#: ../widget/preference.vala:382 ../widget/terminal.vala:265
+#: ../widget/preference.vala:380 ../widget/terminal.vala:265
 msgid "Fullscreen"
-msgstr ""
+msgstr "Visas ekranas"
 
-#: ../widget/preference.vala:328
+#: ../widget/preference.vala:326
 msgid "Fullscreen:"
-msgstr ""
+msgstr "Visas ekranas:"
 
 #: ../widget/remote_server_dialog.vala:102
 msgid "Group"
-msgstr ""
+msgstr "Grupė"
 
 #: ../widget/remote_server_dialog.vala:271
 msgid "Group:"
-msgstr ""
+msgstr "Grupė:"
 
 #: ../widget/appbar.vala:138
 msgid "Help"
-msgstr ""
-
-#: ../widget/preference.vala:386
-msgid "Hide quake window after lost focus"
-msgstr ""
+msgstr "Pagalba"
 
 #: ../widget/terminal.vala:249 ../widget/config_window.vala:296
 msgid "Horizontal split"
 msgstr ""
 
-#: ../widget/preference.vala:314
+#: ../widget/preference.vala:312
 msgid "Horizontal split:"
 msgstr ""
 
-#: ../widget/preference_slidebar.vala:59 ../widget/preference.vala:241
+#: ../widget/preference_slidebar.vala:59 ../widget/preference.vala:239
 msgid "Interface"
-msgstr ""
+msgstr "Sąsaja"
 
 #: ../widget/config_window.vala:273
 msgid "Jump to next command"
 msgstr ""
 
-#: ../widget/preference.vala:299
+#: ../widget/preference.vala:297
 msgid "Jump to next command:"
 msgstr ""
 
@@ -317,57 +313,57 @@ msgstr ""
 msgid "Jump to previous command"
 msgstr ""
 
-#: ../widget/preference.vala:300
+#: ../widget/preference.vala:298
 msgid "Jump to previous command:"
 msgstr ""
 
-#: ../widget/preference.vala:381
+#: ../widget/preference.vala:379
 msgid "Maximize"
-msgstr ""
+msgstr "Išskleisti"
 
 #: ../widget/command_dialog.vala:84
 msgid "Name"
-msgstr ""
+msgstr "Pavadinimas"
 
 #: ../widget/command_dialog.vala:160
 msgid "Name:"
-msgstr ""
+msgstr "Pavadinimas:"
 
 #: ../widget/appbar.vala:131
 msgid "New window"
-msgstr ""
+msgstr "Naujas langas"
 
 #: ../widget/terminal.vala:257 ../widget/config_window.vala:290
 msgid "New workspace"
-msgstr ""
+msgstr "Nauja darbo sritis"
 
-#: ../widget/preference.vala:309
+#: ../widget/preference.vala:307
 msgid "New workspace:"
-msgstr ""
+msgstr "Nauja darbo sritis:"
 
 #: ../widget/config_window.vala:292
 msgid "Next workspace"
-msgstr ""
+msgstr "Kita darbo sritis"
 
-#: ../widget/preference.vala:312
+#: ../widget/preference.vala:310
 msgid "Next workspace:"
-msgstr ""
+msgstr "Kita darbo sritis:"
 
-#: ../widget/preference.vala:380
+#: ../widget/preference.vala:378
 msgid "Normal window"
-msgstr ""
+msgstr "Normalus langas"
 
-#: ../widget/preference.vala:132
+#: ../widget/preference.vala:131
 msgid "Opacity:"
-msgstr ""
+msgstr "Skaidrumas:"
 
 #: ../widget/terminal.vala:240 ../widget/config_window.vala:267
 msgid "Open"
-msgstr ""
+msgstr "Atverti"
 
-#: ../widget/preference.vala:294
+#: ../widget/preference.vala:292
 msgid "Open:"
-msgstr ""
+msgstr "Atverti:"
 
 #: ../widget/remote_server_dialog.vala:269
 #: ../widget/remote_server_dialog.vala:279
@@ -377,28 +373,28 @@ msgstr ""
 
 #: ../widget/remote_server_dialog.vala:102
 msgid "Password"
-msgstr ""
+msgstr "Slaptažodis"
 
 #: ../widget/remote_server_dialog.vala:241
 msgid "Password:"
-msgstr ""
+msgstr "Slaptažodis:"
 
 #: ../widget/terminal.vala:233 ../widget/config_window.vala:266
 #: ../widget/entry_menu.vala:18
 msgid "Paste"
-msgstr ""
+msgstr "Įdėti"
 
-#: ../widget/preference.vala:293
+#: ../widget/preference.vala:291
 msgid "Paste:"
-msgstr ""
+msgstr "Įdėti:"
 
 #: ../widget/remote_server_dialog.vala:102
 msgid "Path"
-msgstr ""
+msgstr "Kelias"
 
 #: ../widget/remote_server_dialog.vala:280
 msgid "Path:"
-msgstr ""
+msgstr "Kelias:"
 
 #: ../widget/shortcut_entry.vala:124
 msgid "Please enter a new shortcut"
@@ -406,19 +402,19 @@ msgstr ""
 
 #: ../widget/remote_server_dialog.vala:194
 msgid "Port:"
-msgstr ""
+msgstr "Prievadas:"
 
 #: ../widget/config_window.vala:293
 msgid "Previous workspace"
-msgstr ""
+msgstr "Ankstesnė darbo sritis"
 
-#: ../widget/preference.vala:311
+#: ../widget/preference.vala:309
 msgid "Previous workspace:"
-msgstr ""
+msgstr "Ankstesnė darbo sritis:"
 
 #: ../widget/confirm_dialog.vala:132
 msgid "Programs are still running in terminal"
-msgstr ""
+msgstr "Yra terminale veikiančių programų"
 
 #: ../main.vala:169
 msgid "Quake mode"
@@ -427,22 +423,22 @@ msgstr ""
 #: ../widget/terminal.vala:279 ../widget/config_window.vala:319
 #: ../widget/appbar.vala:134
 msgid "Remote management"
-msgstr ""
+msgstr "Nuotolinis administravimas"
 
-#: ../widget/preference.vala:331
+#: ../widget/preference.vala:329
 msgid "Remote management:"
-msgstr ""
+msgstr "Nuotolinis administravimas:"
 
 #: ../widget/remote_server_dialog.vala:181
 #: ../widget/remote_server_dialog.vala:191
 #: ../widget/remote_server_dialog.vala:226 ../widget/command_dialog.vala:159
 #: ../widget/command_dialog.vala:172
 msgid "Required"
-msgstr ""
+msgstr "Būtina"
 
-#: ../widget/preference.vala:392
+#: ../widget/preference.vala:383
 msgid "Restore default settings"
-msgstr ""
+msgstr "Atstatyti numatytuosius nustatymus"
 
 #: ../main.vala:182
 msgid ""
@@ -451,45 +447,45 @@ msgstr ""
 
 #: ../main.vala:151 ../main.vala:160
 msgid "Run a program in the terminal"
-msgstr ""
+msgstr "Paleisti programą terminale"
 
 #: ../widget/remote_server_dialog.vala:344 ../widget/command_dialog.vala:196
 msgid "Save"
-msgstr ""
+msgstr "Įrašyti"
 
-#: ../widget/preference_slidebar.vala:88 ../widget/preference.vala:360
+#: ../widget/preference_slidebar.vala:88 ../widget/preference.vala:358
 msgid "Scroll"
-msgstr ""
+msgstr "Slinkimas"
 
-#: ../widget/preference.vala:366
+#: ../widget/preference.vala:364
 msgid "Scroll on keystroke"
 msgstr ""
 
-#: ../widget/preference.vala:367
+#: ../widget/preference.vala:365
 msgid "Scroll on output"
 msgstr ""
 
 #: ../widget/terminal.vala:269 ../widget/search_entry.vala:64
 #: ../widget/search_entry.vala:67 ../widget/config_window.vala:268
 msgid "Search"
-msgstr ""
+msgstr "Paieška"
 
-#: ../widget/preference.vala:295 ../widget/remote_panel.vala:471
+#: ../widget/preference.vala:293 ../widget/remote_panel.vala:471
 #: ../widget/command_panel.vala:201
 msgid "Search:"
-msgstr ""
+msgstr "Paieška:"
 
 #: ../widget/terminal.vala:407 ../widget/file_button.vala:71
 msgid "Select"
-msgstr ""
+msgstr "Pasirinkti"
 
 #: ../widget/config_window.vala:272 ../widget/entry_menu.vala:24
 msgid "Select all"
-msgstr ""
+msgstr "Žymėti viską"
 
-#: ../widget/preference.vala:301
+#: ../widget/preference.vala:299
 msgid "Select all:"
-msgstr ""
+msgstr "Žymėti viską:"
 
 #: ../widget/terminal.vala:405
 msgid "Select directory to save download file"
@@ -497,31 +493,31 @@ msgstr ""
 
 #: ../widget/terminal.vala:376
 msgid "Select file to upload"
-msgstr ""
+msgstr "Pasirinkti failą įkėlimui"
 
 #: ../widget/config_window.vala:299
 msgid "Select left window"
-msgstr ""
+msgstr "Pasirinkti kairįjį langą"
 
-#: ../widget/preference.vala:317
+#: ../widget/preference.vala:315
 msgid "Select left window:"
-msgstr ""
+msgstr "Pasirinkti kairįjį langą:"
 
 #: ../widget/config_window.vala:298
 msgid "Select lower window"
-msgstr ""
+msgstr "Pasirinkti žemesnį langą"
 
-#: ../widget/preference.vala:316
+#: ../widget/preference.vala:314
 msgid "Select lower window:"
-msgstr ""
+msgstr "Pasirinkti žemesnį langą"
 
 #: ../widget/config_window.vala:300
 msgid "Select right window"
-msgstr ""
+msgstr "Pasirinkti dešinįjį langą"
 
-#: ../widget/preference.vala:318
+#: ../widget/preference.vala:316
 msgid "Select right window:"
-msgstr ""
+msgstr "Pasirinkti dešinįjį langą:"
 
 #: ../widget/file_button.vala:67
 msgid "Select the private key file"
@@ -529,23 +525,23 @@ msgstr ""
 
 #: ../widget/config_window.vala:297
 msgid "Select upper window"
-msgstr ""
+msgstr "Pasirinkti aukštesnį langą"
 
-#: ../widget/preference.vala:315
+#: ../widget/preference.vala:313
 msgid "Select upper window:"
-msgstr ""
+msgstr "Pasirinkti aukštesnį langą:"
 
 #: ../widget/config_window.vala:294
 msgid "Select workspace"
-msgstr ""
+msgstr "Pasirinkti darbo sritį"
 
 #: ../widget/remote_server_dialog.vala:102
 msgid "Server name"
-msgstr ""
+msgstr "Serverio pavadinimas"
 
 #: ../widget/remote_server_dialog.vala:182
 msgid "Server name:"
-msgstr ""
+msgstr "Serverio pavadinimas:"
 
 #: ../main.vala:133
 msgid "Set the terminal startup directory"
@@ -557,16 +553,16 @@ msgstr ""
 
 #: ../widget/terminal.vala:287 ../widget/appbar.vala:136
 msgid "Settings"
-msgstr ""
+msgstr "Nustatymai"
 
-#: ../widget/preference_slidebar.vala:66 ../widget/preference.vala:283
+#: ../widget/preference_slidebar.vala:66 ../widget/preference.vala:281
 #: ../widget/command_dialog.vala:84
 msgid "Shortcuts"
-msgstr ""
+msgstr "Nuorodos"
 
 #: ../widget/command_dialog.vala:181
 msgid "Shortcuts:"
-msgstr ""
+msgstr "Nuorodos:"
 
 #: ../widget/config_window.vala:316
 msgid "Switch fullscreen"
@@ -574,48 +570,48 @@ msgstr ""
 
 #: ../widget/terminal.vala:275 ../widget/appbar.vala:132
 msgid "Switch theme"
-msgstr ""
+msgstr "Pakeisti temą"
 
-#: ../widget/preference_slidebar.vala:69 ../widget/preference.vala:286
+#: ../widget/preference_slidebar.vala:69 ../widget/preference.vala:284
 #: ../widget/config_window.vala:279
 msgid "Terminal"
-msgstr ""
+msgstr "Terminalas"
 
 #: ../widget/terminal.vala:419
 msgid "Type path for download file"
-msgstr ""
+msgstr "Įvesti kelią atsiunčiamam failui"
 
 #: ../widget/terminal.vala:380
 msgid "Upload"
-msgstr ""
+msgstr "Įkelti"
 
 #: ../widget/terminal.vala:282
 msgid "Upload file"
-msgstr ""
+msgstr "Įkelti failą"
 
-#: ../widget/preference.vala:383
+#: ../widget/preference.vala:381
 msgid "Use on starting:"
 msgstr ""
 
 #: ../widget/remote_server_dialog.vala:102
 msgid "Username"
-msgstr ""
+msgstr "Naudotojo vardas"
 
 #: ../widget/remote_server_dialog.vala:227
 msgid "Username:"
-msgstr ""
+msgstr "Naudotojo vardas:"
 
 #: ../widget/about_widget.vala:86
 msgid "Version:"
-msgstr ""
+msgstr "Versija:"
 
 #: ../widget/terminal.vala:250 ../widget/config_window.vala:295
 msgid "Vertical split"
-msgstr ""
+msgstr "Vertikalus dalijimas"
 
-#: ../widget/preference.vala:313
+#: ../widget/preference.vala:311
 msgid "Vertical split:"
-msgstr ""
+msgstr "Vertikalus dalijimas:"
 
 #: ../widget/remote_panel.vala:225
 msgid ""
@@ -624,31 +620,31 @@ msgid ""
 "files."
 msgstr ""
 
-#: ../widget/preference_slidebar.vala:91 ../widget/preference.vala:369
+#: ../widget/preference_slidebar.vala:91 ../widget/preference.vala:367
 msgid "Window"
-msgstr ""
+msgstr "Langas"
 
-#: ../widget/preference_slidebar.vala:72 ../widget/preference.vala:303
+#: ../widget/preference_slidebar.vala:72 ../widget/preference.vala:301
 #: ../widget/config_window.vala:307
 msgid "Workspace"
-msgstr ""
+msgstr "Darbo sritis"
 
 #: ../widget/config_window.vala:269
 msgid "Zoom in"
-msgstr ""
+msgstr "Didinti"
 
-#: ../widget/preference.vala:296
+#: ../widget/preference.vala:294
 msgid "Zoom in:"
-msgstr ""
+msgstr "Didinti:"
 
 #: ../widget/config_window.vala:270
 msgid "Zoom out"
-msgstr ""
+msgstr "Mažinti"
 
-#: ../widget/preference.vala:297
+#: ../widget/preference.vala:295
 msgid "Zoom out:"
-msgstr ""
+msgstr "Mažinti:"
 
 #: ../widget/terminal.vala:539 ../widget/terminal.vala:962
 msgid "deepin"
-msgstr ""
+msgstr "deepin"

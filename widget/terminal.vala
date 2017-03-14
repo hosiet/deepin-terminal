@@ -35,7 +35,7 @@ namespace Widgets {
             STRING,
             TEXT
         }
-
+        
 		public Menu.Menu menu;
 		public WorkspaceManager workspace_manager;
 		public bool has_select_all = false;
@@ -49,6 +49,8 @@ namespace Widgets {
         public Terminal term;
         public bool is_first_term; 
         public bool press_anything = false;
+        public bool child_has_exit = false;
+        public bool has_print_exit_notify = false;
         public double zoom_factor = 1.0;
         public string current_dir = "";
         public string expect_file_path = "";
@@ -90,8 +92,16 @@ namespace Widgets {
             
 			term = new Terminal();
 			
-            term.child_exited.connect ((t)=> {
-                    exit();
+            term.child_exited.connect((t)=> {
+                    child_has_exit = true;
+                    
+                    if (is_launch_command() && workspace_manager.is_first_term(this)) {
+                        // Print exit notify if command execute finish.
+                        print_exit_notify();
+                    } else {
+                        // Just exit terminal if `child_exited' signal emit by shell.
+                        exit();
+                    }
                 });
             term.destroy.connect((t) => {
                     kill_fg();
@@ -167,7 +177,7 @@ namespace Widgets {
             
             // NOTE: if terminal start with option '-e', use functional 'launch_command' and don't use function 'launch_shell'.
             // terminal will crash if we launch_command after launch_shell.
-            if (Application.commands.size > 0) {
+            if (is_launch_command() && workspace_manager.is_first_term(this)) {
                 launch_command(Application.commands, work_directory);
             } else {
                 launch_shell(work_directory);
@@ -257,6 +267,9 @@ namespace Widgets {
             }
                             
             menu_content.append(new Menu.MenuItem("search", _("Search")));
+            if (term.get_has_selection()) {
+                menu_content.append(new Menu.MenuItem("google", "Google"));
+            }
             menu_content.append(new Menu.MenuItem("", ""));
             if (in_quake_window) {
                 menu_content.append(new Menu.MenuItem("switch_theme", _("Switch theme")));
@@ -307,8 +320,11 @@ namespace Widgets {
                         window.toggle_fullscreen();
                         break;
 			    	case "search":
-						workspace_manager.focus_workspace.search();
+                        workspace_manager.focus_workspace.search(get_selection_text());
 			    		break;
+                    case "google":
+                        search_in_google(get_selection_text());
+                        break;
 					case "horizontal_split":
 						workspace_manager.focus_workspace.split_horizontal();
 						break;
@@ -603,6 +619,17 @@ namespace Widgets {
         }
         
         private bool on_key_press(Gtk.Widget widget, Gdk.EventKey key_event) {
+            // Exit terminal if got `child_exited' signal by command execute finish.
+            if (child_has_exit && is_launch_command() && workspace_manager.is_first_term(this)) {
+                string keyname = Keymap.get_keyevent_name(key_event);
+                if (keyname == "Enter") {
+                    // Exit key press callback if current terminal has exit.
+                    exit();
+                    
+                    return true;
+                }
+            }
+            
             // This variable use for highlight_tab.
             press_anything = true;
             
@@ -873,6 +900,7 @@ namespace Widgets {
                     warning("Terminal launch_shell: %s\n", e.message);
                 }
             }
+            
             launch_idle_id = GLib.Idle.add(() => {
                     try {
                         term.spawn_sync(Vte.PtyFlags.DEFAULT,
@@ -896,6 +924,33 @@ namespace Widgets {
                     launch_idle_id = 0;
                     return false;
                 });
+        }
+        
+        public bool is_launch_command() {
+            return Application.commands.size > 0;
+        }
+        
+        public void print_exit_notify() {
+            if (!has_print_exit_notify) {
+                GLib.Timeout.add(200, () => {
+                        try {
+                            term.spawn_sync(Vte.PtyFlags.DEFAULT,
+                                            null,
+                                            {"echo", _("\nCommand has been completed, press ENTER to exit the terminal.")},
+                                            null,
+                                            GLib.SpawnFlags.SEARCH_PATH,
+                                            null, /* child setup */
+                                            null,
+                                            null /* cancellable */);
+                        } catch (Error e) {
+                            warning("Terminal print_exit_notify: %s\n", e.message);
+                        }
+                        
+                        return false;
+                    });
+                
+                has_print_exit_notify = true;
+            }
         }
         
         public void launch_command(ArrayList<string> commands, string? dir) {
@@ -1035,34 +1090,53 @@ namespace Widgets {
         }
         
         public string? get_selection_file() {
-            // FIXME: vte developer private function 'get_selected_text', so i can't get selected text from api.
-            // So i get selected text from clipboard that i need save clipboard context before i test selection context.
-            var clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD);
-            var current_clipboard_text = clipboard.wait_for_text();
-            
-            term.copy_clipboard();
-            var clipboard_text = clipboard.wait_for_text();
-            
-            // FIXME: vte developer private function 'get_selected_text', so i can't get selected text from api.
-            // So i get selected text from clipboard that i need restore clipboard context before i test selection context.
-            if (current_clipboard_text != null) {
-                var display = Gdk.Display.get_default();
-                Gtk.Clipboard.get_for_display(display, Gdk.SELECTION_CLIPBOARD).set_text(current_clipboard_text, current_clipboard_text.length);
-            }
-            if (clipboard_text != null) {
-                clipboard_text = clipboard_text.strip();
-                if (clipboard_text != "") {
-                    var clipboard_file_path = GLib.Path.build_path(Path.DIR_SEPARATOR_S, current_dir, clipboard_text);
-                    if (FileUtils.test(clipboard_file_path, FileTest.EXISTS)) {
-                        return clipboard_file_path;
-                    } else {
-                        return null;
-                    }
+            string? clipboard_text = get_selection_text();
+            if (clipboard_text != "") {
+                var clipboard_file_path = GLib.Path.build_path(Path.DIR_SEPARATOR_S, current_dir, clipboard_text);
+                if (FileUtils.test(clipboard_file_path, FileTest.EXISTS)) {
+                    return clipboard_file_path;
                 } else {
                     return null;
                 }
             } else {
                 return null;
+            }
+        }
+
+        public string get_selection_text() {
+            if (term.get_has_selection()) {
+                // FIXME: vte developer private function 'get_selected_text', so i can't get selected text from api.
+                // So i get selected text from clipboard that i need save clipboard context before i test selection context.
+                var clipboard = Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD);
+                var current_clipboard_text = clipboard.wait_for_text();
+            
+                term.copy_clipboard();
+                var clipboard_text = clipboard.wait_for_text();
+            
+                // FIXME: vte developer private function 'get_selected_text', so i can't get selected text from api.
+                // So i get selected text from clipboard that i need restore clipboard context before i test selection context.
+                if (current_clipboard_text != null) {
+                    var display = Gdk.Display.get_default();
+                    Gtk.Clipboard.get_for_display(display, Gdk.SELECTION_CLIPBOARD).set_text(current_clipboard_text, current_clipboard_text.length);
+                }
+                if (clipboard_text != null) {
+                    return clipboard_text.strip();
+                } else {
+                    return "";
+                }
+            } else {
+                return "";
+            }
+        }
+        
+        public void search_in_google(string search_text) {
+            try {
+                GLib.AppInfo appinfo = GLib.AppInfo.create_from_commandline(
+                    "xdg-open 'http://google.com/search?q=%s'".printf(search_text.escape("\n")),
+                    null, GLib.AppInfoCreateFlags.NONE);
+                appinfo.launch(null, null);
+            } catch (GLib.Error e) {
+                print("Terminal search_in_google: %s\n", e.message);
             }
         }
         
