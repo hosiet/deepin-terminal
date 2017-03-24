@@ -731,7 +731,7 @@ namespace Widgets {
                     return false;
                 }
                 
-                                // Avoid key single character do command shorcut scan.
+                // Avoid key single character do command shorcut scan.
                 if (keyname.length > 1 && keyname != "Enter") {
                     string command_config_file_path = Utils.get_config_file_path("command-config.conf");
                     var file = File.new_for_path(command_config_file_path);

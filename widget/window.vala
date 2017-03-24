@@ -26,6 +26,7 @@ using Config;
 using Gtk;
 using Wnck;
 using XUtils;
+using Utils;
 
 namespace Widgets {
     public class Window : Widgets.ConfigWindow {
@@ -53,7 +54,7 @@ namespace Widgets {
             transparent_window();
             init_window();
             
-            int monitor = screen.get_monitor_at_window(screen.get_active_window());
+            int monitor = config.get_terminal_monitor();
             Gdk.Rectangle rect;
             screen.get_monitor_geometry(monitor, out rect);
             
@@ -166,7 +167,7 @@ namespace Widgets {
                     update_style();
                     
                     if (window_is_fullscreen() || window_is_max()) {
-                        window_widget_box.margin_top = 1;
+                        window_widget_box.margin_top = 0;
                         window_widget_box.margin_bottom = 0;
                         window_widget_box.margin_start = 0;
                         window_widget_box.margin_end = 0;
