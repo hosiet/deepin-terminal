@@ -20,6 +20,8 @@ Build-Depends:
  valac,
 Standards-Version: 3.9.8
 Homepage: http://www.deepin.org
+Vcs-Git: https://github.com/hosiet/deepin-terminal
+Vcs-Browser: https://github.com/hosiet/deepin-terminal
 
 Package: deepin-terminal
 Architecture: any
